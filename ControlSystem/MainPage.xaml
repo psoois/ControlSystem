@@ -1,0 +1,17 @@
+﻿<Page x:Class="ControlSystem.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ControlSystem"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainPage">
+
+    <Grid Background="White" Height="600" Width="800" VerticalAlignment="Center">
+        <Image Source="C:\Users\GoncharenkoAI\source\repos\Repos\CSharp\WPF\ControlSystem\ControlSystem\Resources\tasklist.png"
+               Opacity=".15"
+               Width="400" VerticalAlignment="Top" Margin="0,50,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="287,10,0,0" TextWrapping="Wrap" Text="Список задач" VerticalAlignment="Top"/>
+    </Grid>
+</Page>

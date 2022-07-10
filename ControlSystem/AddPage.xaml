@@ -1,0 +1,37 @@
+﻿<Page x:Class="ControlSystem.AddPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ControlSystem"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddPage">
+
+    <Grid Background="White" Height="600" Width="800" VerticalAlignment="Center">
+        <Image Source="C:\Users\GoncharenkoAI\source\repos\Repos\CSharp\WPF\ControlSystem\ControlSystem\Resources\tasklist.png"
+               Opacity=".15"
+               Width="400" VerticalAlignment="Top" Margin="0,50,0,0"/>
+        <Button Width="150" Height="40" x:Name="Create" Content="Создать" Margin="560,375,90,185" Click="Create_Click"></Button>
+        <Button Width="150" Height="40" x:Name="Delete" Content="Удалить" Margin="230,375,90,185" Click="Delete_Click"></Button>
+
+        <TextBlock HorizontalAlignment="Left" Margin="287,10,0,0" TextWrapping="Wrap" Text="Создание новой задачи" VerticalAlignment="Top"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="88,45,0,0" TextWrapping="Wrap" Text="Наименование задачи" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="88,80,0,0" TextWrapping="Wrap" Text="Описание" VerticalAlignment="Top" />
+        <TextBlock HorizontalAlignment="Left" Margin="88,115,0,0" TextWrapping="Wrap" Text="Дата регистрации задачи в системе" VerticalAlignment="Top" />
+        <TextBlock HorizontalAlignment="Left" Margin="88,150,0,0" TextWrapping="Wrap" Text="Статус задачи" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="86,185,0,0" TextWrapping="Wrap" Text="Дата завершения" VerticalAlignment="Top"/>
+
+        <TextBox x:Name="TextBoxName" HorizontalAlignment="Left"  VerticalContentAlignment="Top"  Width="220" Height="30" Margin="304,-210,41,289" FontSize="16"/>
+        <TextBox x:Name="TextBoxDescription" HorizontalAlignment="Left" VerticalContentAlignment="Top" Width="220" Height="30" Margin="304,73,0,497" FontSize="16"/>
+        <TextBox x:Name="TextBoxStatus" HorizontalAlignment="Left"  VerticalContentAlignment="Top"  Width="220" Height="30" Margin="304,143,0,427" FontSize="16"/>
+
+        <TextBox x:Name="TextBoxRegistratoinDate" HorizontalAlignment="Left" VerticalContentAlignment="Top" Width="220" Height="30" Margin="304,178,0,392" FontSize="16"/>
+        <TextBox x:Name="TextBoxComplationDate" HorizontalAlignment="Left" VerticalContentAlignment="Top" Width="220" Height="30" Margin="304,108,0,462" FontSize="16"/>
+
+        <DatePicker Name="datePicker1" IsDropDownOpen="False" SelectedDateFormat="Short" Width="150" Height="25" Margin="304,180,346,394" />
+        
+
+    </Grid>
+</Page>
